@@ -21,6 +21,6 @@ int main(){
 	dp[i] += MOD;
 	dp[i] %= MOD;
     }
-    printf("%d\n", dp[n] - dp[n - 1]);
+    printf("%d\n", (dp[n] - dp[n - 1] + MOD) % MOD);
     return 0;
 }
